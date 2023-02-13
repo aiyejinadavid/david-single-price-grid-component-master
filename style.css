@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(208, 224, 216);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 25%;
+    font-size: 16px;
+    padding: 80px;
+}
+
+.white {
+    background-color: white;
+    width: 450px;
+    height: 100px;
+    padding: 40px 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.green {
+    display: flex;
+    width: 510px;
+    height: 210px;
+}
+
+.dark_green{
+    width: 230px;
+    background-color: hsl(179, 62%, 43%);
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+}
+
+.light_green {
+    width: 230px;
+    background-color: hsl(179, 44%, 57%);
+    padding: 30px;
+    border-bottom-right-radius: 10px;
+}
+
+h1, h2 {
+    font-size: 1em;
+    padding: 7px 0;
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+p {
+    font-size: 0.7em;
+    font-family: "karla", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.white h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.white h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+.white p {
+    color: hsl(218, 22%, 67%);
+}
+
+.money {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: white;
+    padding: 7px 0;
+}
+
+span {
+    color: hsl(216, 16%, 82%);
+    font-size: 0.5em;
+    font-weight: 400;
+}
+
+button {
+    padding: 10px;
+    margin: 20px 0;
+    width: 170px;
+    border-radius: 10px;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    border: transparent;
+}
+
+.comment {
+    display: flex;
+    line-height: 16px;
+    padding-top: 7px;
+}
+
+@media (max-width:452px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 10px;
+    }
+
+    .green {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .white {
+        width: 230px;
+        height: 170px;
+        line-height: 20px;
+        padding: 20px 15px;
+    }
+
+    .dark_green, .light_green {
+        padding: 10px 15px;
+    }
+
+    .light_green {
+        border-bottom-left-radius: 10px;
+    }
+    
+    .dark_green {
+        border-bottom-left-radius: 0;
+    }
+}
